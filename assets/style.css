@@ -1,193 +1,227 @@
-/* -------------------------------------
-                GENERAL
-    ------------------------------------ */
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* General Styles */
+html, body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
 body {
-    font-family: 'Comfortaa', sans-serif;
-    margin: 0px;
-    padding: 0;
-    border: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    margin: calc(100% - 40px) 0 0 0;
-    padding: 10px 20px;
-    width: calc(100% - 40px);
-    position: fixed;
-    bottom: 0;
-    left: 0;
+.foto_carnet{
+    
 }
 
-header {
-    background-color: lightblue;
-    color: black;
-    padding: 20px 0;
-    text-align: center;
+header, footer {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 2px 4px #0000001a;
 }
 
 header h1, header h2 {
-    margin: 10px;
+  margin: 1rem 0;
 }
 
-header h2 {
-    font-weight: normal;
-    font-size: 1.2em;
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 30px;
+  margin-bottom: 2px;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #444;
-    padding: 10px 0;
+header nav div a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
-nav div {
-    margin: 0 15px;
+header nav div a:hover {
+  background-color: lightblue;
+  color: black;
 }
 
 main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
 }
 
 article {
-    margin-bottom: 20px;
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 10px #1b02721a;
+    border-radius: 5px;
+} 
+
+article h3{
     text-align: center;
+    margin-bottom: 5px;
 }
 
-h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+article p{
+    text-align: center;
+    margin-top: 2px;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
+article ul {
+    text-align: center;
+    list-style-position: inside;
 }
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
+article a{
+    text-decoration: none;
+    color:black;
 }
 
-th {
-    background-color: #333;
-    color: #fff;
+article a:active{
+    text-decoration: none;
+    color:black;
 }
 
-input[type="range"] {
-    width: 100%;
+article a:hover{
+    text-decoration: none;
+    color:black;
 }
 
-header, nav, main, footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+article a:visited{
+    text-decoration: none;
+    color:black;
 }
 
-nav {
-    flex-direction: row;
+aside {
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 4px 10px #1b02721a;
+  border-radius: 5px;
+}
+
+aside h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+aside p{
+    text-align: center;
+    margin-top: 5px;
 }
 
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  max-width: 800px;
 }
 
-section div, section table {
-    width: 80%;
+section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
 }
 
+section table, section th, section td {
+  border: 1px solid #ddd;
+}
 
+section th, section td {
+  padding: 0.75rem;
+  text-align: left;
+}
 
-/* -------------------------------------
-            ENLACES
-    ------------------------------------ */
-    nav a {
-        color: white;
-        text-decoration: none;
-        margin-left: 11px;
-    }
+section th {
+  background-color: #f8f9fa;
+}
 
-    nav a:hover {
-        color: lightblue;
-        text-shadow: lightgoldenrodyellow 1px 1px 10px;
-        text-decoration: none;
-    }
-    
-    nav a:active {
-        color: lightblue;
-        text-decoration: none;
-    }
-    
-    nav a:visited {
-        color: white;
-        text-decoration: none;
-    }
+footer {
+  position: static;
+  bottom: 0;
+  width: 100%;
+}
 
-    footer a {
-        color: white;
-        text-decoration: none;
-        margin-left: 11px;
-    }
-    
-    footer a:hover {
-        color: lightblue;
-        text-decoration: none;
-    }
-    
-    footer a:active {
-        color: lightblue;
-        text-decoration: none;
-    }
-    
-    footer a:visited {
-        color: white;
-        text-decoration: none;
-    }
+footer a{
+    text-decoration: none;
+    color:white;
+}
 
-/* -------------------------------------
-        Página INDEX
-    ------------------------------------ */
+footer a:active{
+    text-decoration: none;
+    color:black;
+    text-shadow: 3 4px 10px #1b02721a;
+}
 
+footer a:hover{
+    text-decoration: none;
+    color:black;
+    text-shadow: 3 49px 10px #1b02721a;
+}
 
-/* -------------------------------------
-        Página FRONTEND
-    ------------------------------------ */
+footer a:visited{
+    text-decoration: none;
+    color:whitesmoke;
+    text-shadow: 3 4px 10px #1b02721a;
+}
 
+footer .lenguajes {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
 
-/* -------------------------------------
-        Página BACKEND
-    ------------------------------------ */
+footer .lenguaje {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
 
+footer .lenguaje img {
+  margin-right: 0.5rem;
+}
 
-/* -------------------------------------
-        Página SKILLS
-    ------------------------------------ */
+footer .lenguaje a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
 
+footer .lenguaje:hover {
+  color: lightblue;
+  text-align: center;
+}
 
-/* -------------------------------------
-        Página SOFT-SKILLS
-    ------------------------------------ */
-
-
-/* -------------------------------------
-        Página CONTACTO
-    ------------------------------------ */
+.lenguaje {
+    flex: 0 1 15%;
+    padding: 20px;
+    color: white;
+    transition: all 1s;
+    height: auto;
+    margin-right: 0px;
+    text-align: center;
+  }
+  
+.lenguaje:hover {
+    flex: 1 1 10%;
+    background: lightblue;
+    text-align: center;
+  }

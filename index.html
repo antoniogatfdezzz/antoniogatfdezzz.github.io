@@ -6,6 +6,7 @@
     <title>CURRICULUM</title><!-- Titulo de la página -->
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon"><!-- Icono de la página -->
 	<link rel="stylesheet" type="text/css" href="./assets/style.css" media="screen" /><!-- Importando CSS para el diseño -->
+	<link rel="stylesheet" type="text/css" href="./assets/style-print.css" media="print" /><!-- Importando CSS para el diseño impreso -->
     
   </head>
   
@@ -16,12 +17,14 @@
 	  
 	  <nav>
 		<div><a href="index.html">🏠 Inicio</a></div>
+		<div><a href="proyectos.html">💭 Proyectos</a></div>
 		<div><a href="frontend.html">💻 Frontend</a></div>
 		<div><a href="backend.html">🛠 Backend</a></div>
+		<div><a href="sistemas.html">⚠ Sistemas</a></div>
 		<div><a href="skills.html">🦾 Skills</a></div>
 		<div><a href="softskills.html">📘 Soft-Skills</a></div>
 		<div><a href="contacto.html">🔍 Contacto</a></div>
-		</nav>
+    	</nav>
     </header>
 
 	<!-- <nav>
@@ -34,11 +37,12 @@
     </nav> -->
 
 <main>
-	
-	
 	<section class="home">
-		<h2>🏠 Inicio</h2>
-		<img src="./img/fotocarnet.png" class="foto_carnet" title="Foto Antonio Gat Fernandez" alt="Foto Perfil" />
+		<aside>
+			<h2>🏠 Inicio</h2>
+			<p></p>
+		</aside>
+		<!--<img src="./img/fotocarnet.png" class="foto_carnet" title="Foto Antonio Gat Fernandez" alt="Foto Perfil" />-->
 		
 		<article>
 			<h3> 📚 Estudios</h3>
@@ -74,30 +78,41 @@
 			<h3>☎ Contacto</h3>
 			<ul>
 			<li><a href="mailto:antoniogatfernandez@iescastelar.com">
-				<img src="./img/mail.png" title="Icono de GitHub" alt="GitHub" />	
+				<img src="./img/mail.png" title="Icono de Correo" alt="Correo" />
+				Correo Electrónico 	
 			</a></li>
 			
 			<li><a href="tel:602663963">
-				<img src="./img/telefono.png" title="Icono de GitHub" alt="GitHub" />	
+				<img src="./img/telefono.png" title="Icono de Telefono" alt="Telefono" />
+				Teléfono	
 			</a></li>	
 			
 			<li><a href="https://github.com/antoniogatfdez">
-				<img src="./img/logogith.png" title="Icono de GitHub" alt="GitHub" />	
+				<img src="./img/logogith.png" title="Icono de GitHub" alt="GitHub" />
+				GitHub	
 			</a></li>
 			<li><a href="https://www.linkedin.com/in/antoniogatfdez">
 				<img src="./img/logolin.png" title="Icono de LinkedIn" alt="LinkedIn" />
+				LinkedIn
 			</a></li>
 			
 			</ul>
 		</article>
 	</section>
+	
 </main>
 
 <footer>
-	<p>  © Antonio Gat Fernández - 2024 </p>
-	<div>
-		<a href="aviso-legal.html">Aviso Legal</a>
-	</div>
+	<a href="aviso-legal.html">© Antonio Gat Fernández - 2024</a>
+	<div class="lenguajes">
+		<label>Lenguajes:	</label>
+		<div class="lenguaje"><a href="https://ude.my/UC-fc6c512c-1b38-4696-ae73-bd2c789a0955?trk=public_profile_see-credential">
+			<img src="./img/logojs.png" title="Icono de JS" alt="JavaScript" /> JavaScript</div>
+		<div class="lenguaje"><a href="https://ude.my/UC-e28842bf-487c-4b34-a8dd-e2c74f9d8d2d?trk=public_profile_see-credential">
+			<img src="./img/logophp.png" title="Icono de PHP" alt="PHP" />PHP</div>
+		<div class="lenguaje"><a href="https://cursos.devtalles.com/certificates/yt2yraw5ul?trk=public_profile_see-credential">
+			<img src="./img/logoshadcnui.png" title="Icono de ShadcnUI" alt="ShadcnUI" />ShadcnUI</div>
+	  </div>
 </footer>
   
   </body>
