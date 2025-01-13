@@ -1,4 +1,8 @@
-/* Reset some default styles */
+/* ---------------------------------------
+
+  BASICOS
+
+------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -17,10 +21,6 @@ body {
   flex-direction: column;
 }
 
-.foto_carnet{
-    
-}
-
 header, footer {
   background-color: #282c34;
   color: white;
@@ -29,6 +29,12 @@ header, footer {
   box-shadow: 0 2px 4px #0000001a;
 }
 
+/* ---------------------------------------
+
+  HEADER
+
+------------------------------------------*/
+
 header h1, header h2 {
   margin: 1rem 0;
 }
@@ -36,12 +42,15 @@ header h1, header h2 {
 header nav {
   display: flex;
   justify-content: center;
+  background-color: #44555c;
   gap: 1rem;
   margin-top: 30px;
   margin-bottom: 2px;
+  border-radius: 5px;
 }
 
 header nav div a {
+  display: flex;
   color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
@@ -50,9 +59,43 @@ header nav div a {
 }
 
 header nav div a:hover {
+  display: flex;
   background-color: lightblue;
   color: black;
 }
+
+@media (max-width: 900px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    background-color: #44555c;
+    color: white;
+  }
+
+  header nav div {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  header nav div a {
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+
+  header nav div a:hover {
+    display: flex;
+    background-color: lightblue;
+    color: black
+  }
+}
+
+/* ---------------------------------------
+
+  CUERPO
+
+------------------------------------------*/
 
 main {
   flex: 1;
@@ -62,12 +105,19 @@ main {
   padding: 2rem;
 }
 
+/* ---------------------------------------
+
+  ARTICLE
+
+------------------------------------------*/
+
 article {
     background-color: white;
     padding: 1rem;
     margin: 5px auto;
     box-shadow: 0 4px 10px #1b02721a;
-    border-radius: 5px;
+    border-radius: 15px;
+    padding: auto;
 } 
 
 article h3{
@@ -105,6 +155,12 @@ article a:visited{
     color:black;
 }
 
+/* ---------------------------------------
+
+  ASIDE
+
+------------------------------------------*/
+
 aside {
   background-color: #fff;
   padding: 1rem;
@@ -124,6 +180,12 @@ aside p{
     text-align: center;
     margin-top: 5px;
 }
+
+/* ---------------------------------------
+
+  SECTIONS
+
+------------------------------------------*/
 
 section {
   width: 100%;
@@ -152,6 +214,12 @@ section th, section td {
 section th {
   background-color: #f8f9fa;
 }
+
+/* ---------------------------------------
+
+  FOOTER
+
+------------------------------------------*/
 
 footer {
   position: static;
@@ -210,6 +278,24 @@ footer .lenguaje:hover {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  footer .lenguajes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .lenguaje {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ---------------------------------------
+
+  LENGUAJES EN EL FOOTER
+
+------------------------------------------*/
+
 .lenguaje {
     flex: 0 1 15%;
     padding: 20px;
@@ -226,9 +312,11 @@ footer .lenguaje:hover {
     text-align: center;
   }
 
+/* ---------------------------------------
 
+  FORMULARIO
 
-  /* Formulario */
+------------------------------------------*/
 
   .formulario {
     background-color: #fff;
